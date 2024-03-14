@@ -37,7 +37,7 @@ header {
 }
 
 .logo {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 48px;
   text-transform: uppercase;
   font-weight: bold;
@@ -192,4 +192,118 @@ strong {
   background: var(--linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* For all */
+
+p {
+  margin: 0 0 25px;
+}
+
+.section {
+  padding-top: 70px;
+}
+
+.section-title {
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+li {
+  list-style-type: none;
+}
+
+.footer-social,
+.footer-made {
+  padding: 30px 0;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+.social li a {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
+  -moz-transition: -moz-transition, background-color 0.25s linear 0s;
+  transition: transition, background-color 0.25s linear 0s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.social li a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.footer-social .social li a:hover i {
+  color: #6e6e6e;
+}
+.footer-social .social li a i {
+  color: #d7d7d7;
+  -webkit-transition: -webkit-transition, color 0.25s linear 0s;
+  -moz-transition: -moz-transition, color 0.25s linear 0s;
+  transition: transition, color 0.25s linear 0s;
+}
+.social li a i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 45px;
+  display: block;
+}
+
+i,
+blockquote:before,
+.ref-box .person-speech:before,
+.widget_search .search-form:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-pink {
+  color: #ff5a83;
+}
+
+a.text-pink:hover {
+  color: #ff5a83;
 }

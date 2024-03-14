@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <section class="section">
       <div class="home">
-        <div class="logo">Xem sim của bạn</div>
+        <div class="logo text-center">Xem sim của bạn</div>
         <div class="searchBar">
           <span class="searchBar-icon"><i class="bi bi-search"></i></span>
           <form action="" class="searchBar-input">
@@ -25,7 +25,7 @@
               value="0918273645"
             />
             <div class="d-flex my-3 align-items-center">
-              <input type="number" placeholder="Nhập năm sinh" id="year" name="year" value="1993" />
+              <input type="number" placeholder="Nhập năm sinh" id="year" name="year" value="2003" />
               <div class="flex-shrink-0 d-flex align-items-center">
                 <input type="radio" id="male" class="radio-input" name="gender" checked value="Nam" />
                 <label for="male" class="radio-label"></label>
@@ -35,123 +35,177 @@
                 <span class="fs-3" style="color: var(--colors-red)"><i class="bi bi-gender-female"></i></span>
               </div>
             </div>
-
-            <div>
+            <div class="text-center">
               <button class="button">Xem sim</button>
             </div>
           </form>
         </div>
       </div>
-    </header>
+    </section>
     <div class="result">
-      <div class="text-center">
-        <h2 style="margin-top: 0" class="text-start">THÔNG TIN CỦA BẠN</h2>
-        <div class="banmenh-result text-start">
-          Bạn sinh năm <strong>1993</strong> - <strong>Quý Dậu</strong> - Bản mệnh <strong>Kim</strong> - Thuộc tuổi
-          <strong>Âm Nam</strong>
+      <!-- Start Info -->
+      <section class="section">
+        <div class="text-center">
+          <h2 style="margin-top: 0" class="section-title">THÔNG TIN CỦA BẠN</h2>
+          <div class="banmenh-result text-center">
+            Bạn sinh năm <strong>2003</strong> - <strong>Quý Mùi</strong> - Bản mệnh <strong>Mộc</strong> - Thuộc tuổi
+            <strong>Âm Nam</strong>
+          </div>
+          <img src="./images/banmenh.png" alt="" class="banmenh-img" />
         </div>
-        <img src="./images/banmenh.png" alt="" class="banmenh-img" />
-      </div>
-      <h2 class="py-2">ÂM DƯƠNG TƯƠNG PHỐI</h2>
-      <p>
-        Sự cân bằng về Âm - Dương trong phong thủy rất quan trọng. Sự cân bằng này tạo ra hòa khí ổn định, và mang đến
-        hạnh phúc cho chủ nhân. Bạn cần biết quy tắc tính Âm - Dương tương phối để hiểu được sự cân bằng này trong phong
-        thủy
-      </p>
-      <div class="d-flex justify-content-center number">
-        <div class="number-item d-flex flex-column number-negative">
-          <span class="number-value p-3">0</span>
-          <span class="number-status p-3">-</span>
+      </section>
+      <!-- End Info -->
+
+      <!-- Start Result -->
+      <section class="section">
+        <h2 class="section-title">ÂM DƯƠNG TƯƠNG PHỐI</h2>
+        <p class="text-center">
+          Sự cân bằng về Âm - Dương trong phong thủy rất quan trọng. Sự cân bằng này tạo ra hòa khí ổn định, và mang đến
+          hạnh phúc cho chủ nhân. Bạn cần biết quy tắc tính Âm - Dương tương phối để hiểu được sự cân bằng này trong
+          phong thủy
+        </p>
+        <div class="d-flex justify-content-center number" style="margin: 0 0 25px">
+          <div class="number-item d-flex flex-column number-negative">
+            <span class="number-value p-3">0</span>
+            <span class="number-status p-3">-</span>
+          </div>
+          <div class="number-item d-flex flex-column number-positive">
+            <span class="number-value p-3">9</span>
+            <span class="number-status p-3">+</span>
+          </div>
+          <div class="number-item d-flex flex-column number-positive">
+            <span class="number-value p-3">1</span>
+            <span class="number-status p-3">+</span>
+          </div>
+          <div class="number-item d-flex flex-column number-negative">
+            <span class="number-value p-3">8</span>
+            <span class="number-status p-3">-</span>
+          </div>
+          <div class="number-item d-flex flex-column number-negative">
+            <span class="number-value p-3">2</span>
+            <span class="number-status p-3">-</span>
+          </div>
+          <div class="number-item d-flex flex-column number-positive">
+            <span class="number-value p-3">7</span>
+            <span class="number-status p-3">+</span>
+          </div>
+          <div class="number-item d-flex flex-column number-positive">
+            <span class="number-value p-3">3</span>
+            <span class="number-status p-3">+</span>
+          </div>
+          <div class="number-item d-flex flex-column number-negative">
+            <span class="number-value p-3">6</span>
+            <span class="number-status p-3">-</span>
+          </div>
+          <div class="number-item d-flex flex-column number-negative">
+            <span class="number-value p-3">4</span>
+            <span class="number-status p-3">-</span>
+          </div>
+          <div class="number-item d-flex flex-column number-positive">
+            <span class="number-value p-3">5</span>
+            <span class="number-status p-3">+</span>
+          </div>
         </div>
-        <div class="number-item d-flex flex-column number-positive">
-          <span class="number-value p-3">9</span>
-          <span class="number-status p-3">+</span>
+        <p class="text-center">
+          Kết quả: <strong>5 dương</strong> và <strong>5 âm</strong> => <strong>Cân bằng tuyệt đối</strong>
+        </p>
+      </section>
+      <!-- End Result -->
+
+      <section class="section">
+        <h2 class="section-title">TÍNH NÚT SIM SỐ ĐẸP</h2>
+        <div class="logo sonut-number" style="text-align: center">9</div>
+        <p class="text-center">Thiên trường địa cửu, tức là thể hiện cho sự lâu bền và vững chắc</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">NGŨ HÀNH SINH KHẮC TRONG DÃY SỐ</h2>
+        <div class="d-flex justify-content-center number-m">
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">0</span>
+            <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">9</span>
+            <span class="number-menh-menh"><img src="./images/hoa.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">1</span>
+            <span class="number-menh-menh"><img src="./images/thuy.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">8</span>
+            <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">2</span>
+            <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">7</span>
+            <span class="number-menh-menh"><img src="./images/kim.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">3</span>
+            <span class="number-menh-menh"><img src="./images/moc.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">6</span>
+            <span class="number-menh-menh"><img src="./images/kim.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">4</span>
+            <span class="number-menh-menh"><img src="./images/moc.png" alt="" /></span>
+          </div>
+          <div class="number-menh d-flex flex-column align-items-center">
+            <span class="number-menh-number">5</span>
+            <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
+          </div>
         </div>
-        <div class="number-item d-flex flex-column number-positive">
-          <span class="number-value p-3">1</span>
-          <span class="number-status p-3">+</span>
-        </div>
-        <div class="number-item d-flex flex-column number-negative">
-          <span class="number-value p-3">8</span>
-          <span class="number-status p-3">-</span>
-        </div>
-        <div class="number-item d-flex flex-column number-negative">
-          <span class="number-value p-3">2</span>
-          <span class="number-status p-3">-</span>
-        </div>
-        <div class="number-item d-flex flex-column number-positive">
-          <span class="number-value p-3">7</span>
-          <span class="number-status p-3">+</span>
-        </div>
-        <div class="number-item d-flex flex-column number-positive">
-          <span class="number-value p-3">3</span>
-          <span class="number-status p-3">+</span>
-        </div>
-        <div class="number-item d-flex flex-column number-negative">
-          <span class="number-value p-3">6</span>
-          <span class="number-status p-3">-</span>
-        </div>
-        <div class="number-item d-flex flex-column number-negative">
-          <span class="number-value p-3">4</span>
-          <span class="number-status p-3">-</span>
-        </div>
-        <div class="number-item d-flex flex-column number-positive">
-          <span class="number-value p-3">5</span>
-          <span class="number-status p-3">+</span>
-        </div>
-      </div>
-      <p class="number-result">
-        Kết quả: <strong>5 dương</strong> và <strong>5 âm</strong> => <strong>Cân bằng tuyệt đối</strong>
-      </p>
-      <h2>TÍNH NÚT SIM SỐ ĐẸP</h2>
-      <div class="logo sonut-number" style="text-align: center">9</div>
-      <div class="sonut-result">Thiên trường địa cửu, tức là thể hiện cho sự lâu bền và vững chắc</div>
-      <h2>NGŨ HÀNH SINH KHẮC TRONG DÃY SỐ</h2>
-      <div class="d-flex justify-content-center number-m">
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">0</span>
-          <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">9</span>
-          <span class="number-menh-menh"><img src="./images/hoa.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">1</span>
-          <span class="number-menh-menh"><img src="./images/thuy.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">8</span>
-          <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">2</span>
-          <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">7</span>
-          <span class="number-menh-menh"><img src="./images/kim.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">3</span>
-          <span class="number-menh-menh"><img src="./images/moc.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">6</span>
-          <span class="number-menh-menh"><img src="./images/kim.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">4</span>
-          <span class="number-menh-menh"><img src="./images/moc.png" alt="" /></span>
-        </div>
-        <div class="number-menh d-flex flex-column align-items-center">
-          <span class="number-menh-number">5</span>
-          <span class="number-menh-menh"><img src="./images/tho.png" alt="" /></span>
-        </div>
-      </div>
-      <h2>NGŨ HÀNH CỦA SỐ ĐIỆN THOẠI</h2>
-      <div class="logo nguhanh-result" style="text-align: center">KIM</div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">NGŨ HÀNH CỦA SỐ ĐIỆN THOẠI</h2>
+        <div class="logo nguhanh-result" style="text-align: center">KIM</div>
+      </section>
     </div>
+    <footer class="mh-footer mh-footer-3" id="mh-contact">
+      <div class="container">
+        <div class="col-sm-12 mh-copyright wow fadeInUp">
+          <div class="row align-items-center">
+            <div class="col-sm-4 footer-made">
+              <div class="text-left">
+                <span>
+                  Made with <i class="bi bi-balloon-heart-fill text-pink"></i> by
+                  <a class="text-pink" href="mailto:q5nguyenn@gmail.com">hoanglam</a>
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-8 footer-social">
+              <ul class="social d-flex justify-content-center">
+                <li>
+                  <a href="https://www.facebook.com/q5nguyen/"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCukvu0KDOp2MY4kORfRuy5Q"><i class="bi bi-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/q5nguyenn"><i class="bi bi-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="bi bi-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="bi bi-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="module" src="./js/main.js"></script>
